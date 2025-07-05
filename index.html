@@ -1143,18 +1143,16 @@
           <h3>Download Options</h3>
           <div class="download-options">
             <div class="download-option">
-              <h4>Google Drive (Recommended)</h4>
-              <p>Download directly from Google Drive</p>
-              <a href="#" id="directDownloadLink" class="download-btn primary" onclick="downloadAPK('direct')">
+              <h4>MEGA (Recommended)</h4>
+              <p>Download directly from MEGA</p>
+              <a href="#" id="megaDownloadLink" class="download-btn primary" onclick="downloadAPK('mega')">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 5v14M19 12l-7 7-7-7"/>
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M8 15l4-6 4 6"/>
                 </svg>
-                Download APK
+                Download APK from MEGA
               </a>
             </div>
-            
-
-
             <div class="download-option">
               <h4>Alternative Download</h4>
               <p>Download from Dropbox (backup option)</p>
@@ -1593,16 +1591,14 @@
     // App Configuration - Easy to update for new versions
     const appConfig = {
       version: "1.0.0",
-      size: "49.1 MB",
+      size: "49.1 MB", // <-- Update this value
       updated: "July 3, 2025",
       
-      // Google Drive Configuration
-      // File ID: 1tThypsmr23FDHPtrQ4iOWyKhA_dA_x23
-      directDownloadUrl: "https://drive.google.com/uc?export=download&id=1tThypsmr23FDHPtrQ4iOWyKhA_dA_x23",
-      googleDriveUrl: "https://drive.google.com/file/d/1tThypsmr23FDHPtrQ4iOWyKhA_dA_x23/view?usp=sharing",
+      // MEGA Download Configuration
+      megaUrl: "https://mega.nz/file/ENAxnTIY#PcifP7NyGDqgkBXP5Dtmdsv1lprQHFpkPXBsRCJIM28",
       
-      // Alternative download options (you can add more)
-      dropboxUrl: "https://dl.dropboxusercontent.com/s/YOUR_DROPBOX_ID/arch-todo-app-v1.0.0.apk",
+      // Alternative download options
+      dropboxUrl: "https://www.dropbox.com/scl/fi/fwjm5x8131l3xzjhqt1ux/Arch.apk?rlkey=d6va0m0qodejz6o28qbb6chkc&st=5srvx7wj&dl=0",
       
       changelog: [
         {
@@ -1636,20 +1632,14 @@
     }
 
     function showDownloadModal() {
-      // Update modal with current app config
       document.getElementById('appVersion').textContent = appConfig.version;
       document.getElementById('appSize').textContent = appConfig.size;
       document.getElementById('appUpdated').textContent = appConfig.updated;
-      
-      // Update download section with current app config
       document.getElementById('downloadVersion').textContent = appConfig.version;
       document.getElementById('downloadSize').textContent = appConfig.size;
       document.getElementById('downloadUpdated').textContent = appConfig.updated;
-      
-      // Update download links
-      document.getElementById('directDownloadLink').href = appConfig.directDownloadUrl;
+      document.getElementById('megaDownloadLink').href = appConfig.megaUrl;
       document.getElementById('dropboxLink').href = appConfig.dropboxUrl;
-      
       document.getElementById('downloadModal').style.display = 'flex';
       document.body.style.overflow = 'hidden';
     }
@@ -1660,30 +1650,9 @@
     }
 
     function downloadAPK(type) {
-      if (type === 'direct') {
-        // Track Google Drive direct download
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'download', {
-            event_category: 'engagement',
-            event_label: 'APK Google Drive Direct v' + appConfig.version
-          });
-        }
-        
-        console.log('Downloading APK from Google Drive:', appConfig.version);
-        
-        // Trigger direct download
-        window.open(appConfig.directDownloadUrl, '_blank');
-        
+      if (type === 'mega') {
+        window.open(appConfig.megaUrl, '_blank');
       } else if (type === 'dropbox') {
-        // Track Dropbox download
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'download', {
-            event_category: 'engagement',
-            event_label: 'APK Dropbox v' + appConfig.version
-          });
-        }
-        
-        console.log('Downloading APK from Dropbox:', appConfig.version);
         window.open(appConfig.dropboxUrl, '_blank');
       }
     }
