@@ -1,0 +1,46 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A modern portfolio website for showcasing projects with documentation, PDFs, and APK downloads",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "build": "echo 'No build process required - static files only'",
+    "lint": "echo 'Linting not configured - add ESLint if needed'",
+    "format": "echo 'Formatting not configured - add Prettier if needed'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "projects",
+    "showcase",
+    "html",
+    "css",
+    "javascript",
+    "tailwind",
+    "responsive",
+    "modern"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/yourusername/portfolio-website#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 

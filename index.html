@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arch Todo App - Productivity Redefined</title>
+    <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MN04P0ZHV7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MN04P0ZHV7');
+  </script>
+</head>
+<body>
+  <!-- Floating Particles Background -->
+  <div class="floating-particles">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+    <div class="particle particle-5"></div>
+    <div class="particle particle-6"></div>
+    <div class="particle particle-7"></div>
+    <div class="particle particle-8"></div>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-text">Arch</span>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#comparison">Compare</a>
+        <a href="#review">Review</a>
+        <a href="#screenshot">Screenshot</a>
+
+        <a href="#support">Support</a>
+        <!-- Theme toggle button removed -->
+      </nav>
+                </div>
+  </header>
+
+  <section class="hero scroll-animate parallax-section" id="home">
+    <div class="parallax-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-mockup">
+        <img src="deviceframes.l-removebg-preview.png" alt="Arch App Phone Mockup" class="hero-phone-mockup" />
+      </div>
+      <div class="hero-text scroll-animate">
+        <h1>Schedule Planner : To-Do App</h1>
+        <span id="typewriter-text" class="typewriter"></span>
+        <p class="desc">Arch Todo App helps you stay organized and focused in today's fast-paced world. Manage tasks, track productivity, and boost your efficiency with a beautiful, modern UI.</p>
+        <div class="download-btns">
+          <a href="#" onclick="showUserGuide()" class="btn btn-apple">📖 User Guide</a>
+          <a href="#download" class="btn btn-google">⬇️ Download</a>
+                </div>
+            </div>
+        </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <section class="features scroll-animate" id="features">
+    <div class="container">
+      <h2 class="features-title">Why Arch Stands Out</h2>
+      <p class="features-intro">Powerful features designed to help you achieve more every day.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card-icon">🧑‍🎤</div>
+          <div class="feature-card-title">Anime Avatars</div>
+          <div class="feature-card-desc">Personalize your profile with unique anime-style avatars.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">🔄</div>
+          <div class="feature-card-title">Cross-Device Sync</div>
+          <div class="feature-card-desc">Access your tasks anywhere, anytime, on any device.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">⏲️</div>
+          <div class="feature-card-title">Pomodoro Technique</div>
+          <div class="feature-card-desc">Boost productivity with built-in Pomodoro timer sessions.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">📊</div>
+          <div class="feature-card-title">Insightful Analytics</div>
+          <div class="feature-card-desc">Visualize your progress and celebrate your wins.</div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <!-- Feature Comparison Table -->
+  <section class="comparison scroll-animate" id="comparison">
+    <div class="container">
+      <h2 class="comparison-title">How Arch Compares</h2>
+      <p class="comparison-intro">See why Arch Todo App's features stand out from the competition.</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="feature-header">Features</th>
+              <th class="arch-header">Arch Todo App</th>
+              <th class="competitor-header">Other Apps</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">Task Creation & Organization</td>
+              <td class="arch-feature">✅ Smart categorization, unlimited tasks, drag-and-drop</td>
+              <td class="competitor-feature">⚠️ Basic organization, limited free tasks</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Anime Avatar System</td>
+              <td class="arch-feature">✅ Customizable anime avatars, mood-based, seasonal</td>
+              <td class="competitor-feature">❌ No or basic avatars</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Built-in Pomodoro Timer</td>
+              <td class="arch-feature">✅ Integrated, customizable, with analytics</td>
+              <td class="competitor-feature">❌ Requires separate app</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Productivity Analytics</td>
+              <td class="arch-feature">✅ Progress charts, focus time, achievements</td>
+              <td class="competitor-feature">⚠️ Basic or premium-only</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Cross-Device Synchronization</td>
+              <td class="arch-feature">✅ Real-time sync, seamless transfer</td>
+              <td class="competitor-feature">⚠️ May have delays or conflicts</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Offline Functionality</td>
+              <td class="arch-feature">✅ Full offline mode, syncs when online</td>
+              <td class="competitor-feature">❌ Limited or no offline</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Visual Design</td>
+              <td class="arch-feature">✅ Anime-inspired, modern, customizable</td>
+              <td class="competitor-feature">⚠️ Standard or outdated</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Free Features</td>
+              <td class="arch-feature">✅ All core features free, no restrictions</td>
+              <td class="competitor-feature">⚠️ Limited free, paywalls</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Summary -->
+      <div class="comparison-summary">
+        <div class="summary-card">
+          <h3>🏆 Why Arch Features Stand Out</h3>
+          <ul>
+            <li>✨ <strong>Unique Anime Experience:</strong> Only app with anime avatars and themed design</li>
+            <li>🎯 <strong>Built-in Productivity Tools:</strong> Pomodoro timer integrated seamlessly</li>
+            <li>📊 <strong>Advanced Analytics:</strong> Detailed insights into your productivity patterns</li>
+            <li>🔄 <strong>Perfect Sync:</strong> Real-time synchronization across all your devices</li>
+            <li>💾 <strong>Offline Freedom:</strong> Work without internet, sync when connected</li>
+            <li>🆓 <strong>Complete Free Access:</strong> All features available without restrictions</li>
+            <li>🔒 <strong>Privacy First:</strong> Your data stays private and secure</li>
+            <li>⚡ <strong>Lightning Fast:</strong> Optimized performance on all devices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="about scroll-animate" id="about">
+      <div class="container">
+        <h2 class="about-title">Discover Arch Todo App</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="about-image-frame">
+              <img src="deviceframes.l-removebg-preview.png" alt="Arch Todo App" />
+              <div class="about-image-glow"></div>
+            </div>
+          </div>
+          <div class="about-text">
+            <div class="about-section">
+              <h3 class="about-section-title">🌟 App Overview</h3>
+              <p class="about-description">
+                Arch Todo App is your ultimate productivity companion, designed to transform the way you organize your life. 
+                Built with modern technology and anime-inspired aesthetics, it combines powerful task management with 
+                beautiful, intuitive design. Whether you're a student, professional, or creative mind, Arch helps you 
+                stay focused, track progress, and achieve your goals with style.
+              </p>
+            </div>
+            
+            <div class="about-section">
+              <h3 class="about-section-title">🎯 Core Features</h3>
+              <div class="about-features-grid">
+                <div class="about-feature-item">
+                  <span class="about-feature-icon">🧑‍🎤</span>
+                  <div class="about-feature-content">
+                    <h4>Anime Avatars</h4>
+                    <p>Personalize your profile with unique anime-style avatars that reflect your personality and mood.</p>
+                  </div>
+                </div>
+                <div class="about-feature-item">
+                  <span class="about-feature-icon">🔄</span>
+                  <div class="about-feature-content">
+                    <h4>Cross-Device Sync</h4>
+                    <p>Seamlessly sync your tasks across all devices - phone, tablet, and desktop. Never lose your progress.</p>
+                  </div>
+                </div>
+                <div class="about-feature-item">
+                  <span class="about-feature-icon">⏲️</span>
+                  <div class="about-feature-content">
+                    <h4>Pomodoro Technique</h4>
+                    <p>Built-in Pomodoro timer with customizable sessions to boost your focus and productivity.</p>
+                  </div>
+                </div>
+                <div class="about-feature-item">
+                  <span class="about-feature-icon">📊</span>
+                  <div class="about-feature-content">
+                    <h4>Insightful Analytics</h4>
+                    <p>Visualize your productivity patterns with detailed analytics and progress tracking.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-section">
+              <h3 class="about-section-title">⚡ Technical Excellence</h3>
+              <div class="about-tech-highlights">
+                <div class="about-tech-item">
+                  <span class="about-tech-label">Modern UI/UX</span>
+                  <span class="about-tech-value">Beautiful, responsive design with smooth animations</span>
+                </div>
+                <div class="about-tech-item">
+                  <span class="about-tech-label">Performance</span>
+                  <span class="about-tech-value">Lightning-fast loading and seamless interactions</span>
+                </div>
+                <div class="about-tech-item">
+                  <span class="about-tech-label">Security</span>
+                  <span class="about-tech-value">Your data is protected with industry-standard encryption</span>
+                </div>
+                <div class="about-tech-item">
+                  <span class="about-tech-label">Offline Support</span>
+                  <span class="about-tech-value">Work without internet - sync when connected</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-section">
+              <h3 class="about-section-title">🎨 User Experience</h3>
+              <p class="about-description">
+                Every interaction in Arch is crafted with care. From the smooth animations to the intuitive navigation, 
+                every detail is designed to make task management enjoyable and efficient. The anime-inspired design elements 
+                add personality while maintaining professional functionality.
+              </p>
+            </div>
+            
+            <div class="about-section">
+              <h3 class="about-section-title">👨‍💻 Developer</h3>
+              <div class="about-developer">
+                <p class="about-description">
+                  Created with passion by <strong>Riju Ranjan Singh</strong>, Arch Todo App represents the perfect blend 
+                  of modern development practices and creative design. Built to help users achieve more while enjoying 
+                  the process of staying organized.
+                </p>
+                <div class="about-contact">
+                  <span>📧 Contact: rijuranjan087@gmail.com</span>
+                  <span>🔗 GitHub: <a href="https://github.com/coder-1459/arch-todo-app" target="_blank">arch-todo-app</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="review scroll-animate" id="review">
+    <div class="container">
+      <h2>What Users Say</h2>
+      <p class="review-intro">Real feedback from our amazing users who love Arch Todo App</p>
+      
+      <div class="reviews-grid">
+        <div class="review-card scroll-animate">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">KS</div>
+              <div class="reviewer-details">
+                <h4>Kumar Shivshankar</h4>
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-number">4.6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Arch Todo App has completely revolutionized my productivity routine. The anime avatars add such a fun, personal touch that makes task management enjoyable. The Pomodoro timer integration is brilliant - I've never been more focused! The cross-device sync works flawlessly, and I love how I can track my progress with the detailed analytics. This app has helped me achieve more in a day than I ever thought possible."</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">Verified User</span>
+          </div>
+        </div>
+
+        <div class="review-card scroll-animate">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">AR</div>
+              <div class="reviewer-details">
+                <h4>Atharva Rotake</h4>
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-number">5.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Absolutely love this app! The interface is so clean and modern, and the anime theme is unique and engaging. What really sets Arch apart is the offline functionality - I can work on my tasks even without internet and everything syncs perfectly when I'm back online. The productivity insights are eye-opening and have helped me identify my peak performance hours. This is hands down the best todo app I've ever used!"</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">Verified User</span>
+          </div>
+        </div>
+
+        <div class="review-card scroll-animate">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">RS</div>
+              <div class="reviewer-details">
+                <h4>Riya Singh</h4>
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-number">4.9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"As a student juggling multiple projects, Arch Todo App has been a game-changer. The smart categorization feature helps me organize my tasks by subject and priority. The visual design is stunning and the animations make the app feel premium. I especially appreciate how the app motivates me with achievement tracking and progress visualization. It's like having a personal productivity coach in my pocket!"</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">Verified User</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-stats">
+        <div class="stat-item">
+          <div class="stat-number">4.8</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+  <section class="screenshot scroll-animate" id="screenshot">
+    <div class="container">
+      <h2>App Screenshots</h2>
+      <p class="screenshot-intro">Explore the beautiful interface and powerful features of Arch Todo App</p>
+      
+      <div class="screenshots-gallery">
+        <div class="screenshot-item scroll-animate">
+          <img src="Screenshots/Screenshot_2025-07-04-19-56-10-532_com.example.todo.png" alt="Arch Todo App - Anime Avatars Profile" class="screenshot-img">
+          <div class="screenshot-overlay">
+            <h4>Anime Avatars Profile</h4>
+            <p>Personalize your profile with unique anime-style avatars</p>
+          </div>
+        </div>
+        
+        <div class="screenshot-item scroll-animate">
+          <img src="Screenshots/Screenshot_2025-07-04-19-55-44-749_com.example.todo.png" alt="Arch Todo App - Task Creation" class="screenshot-img">
+          <div class="screenshot-overlay">
+            <h4>Task Creation</h4>
+            <p>Easy and quick task setup</p>
+          </div>
+        </div>
+        
+        <div class="screenshot-item scroll-animate">
+          <img src="Screenshots/Screenshot_2025-07-04-19-55-09-732_com.example.todo.png" alt="Arch Todo App - Pomodoro Technique" class="screenshot-img">
+          <div class="screenshot-overlay">
+            <h4>Pomodoro Technique</h4>
+            <p>Built-in timer for focused productivity sessions</p>
+          </div>
+        </div>
+        
+        <div class="screenshot-item scroll-animate">
+          <img src="Screenshots/Screenshot_2025-07-04-19-55-00-712_com.example.todo.png" alt="Arch Todo App - Task Statistics" class="screenshot-img">
+          <div class="screenshot-overlay">
+            <h4>Task Statistics</h4>
+            <p>Track your productivity with detailed analytics</p>
+          </div>
+        </div>
+        
+        <div class="screenshot-item scroll-animate">
+          <img src="Screenshots/Screenshot_2025-07-04-19-54-46-388_com.example.todo.png" alt="Arch Todo App - Calendar" class="screenshot-img">
+          <div class="screenshot-overlay">
+            <h4>Calendar</h4>
+            <p>Organize tasks with calendar view</p>
+          </div>
+        </div>
+        
+        <div class="screenshot-item scroll-animate">
+          <img src="Screenshots/Screenshot_2025-07-04-19-54-30-575_com.example.todo.png" alt="Arch Todo App - Main Interface" class="screenshot-img">
+          <div class="screenshot-overlay">
+            <h4>Main Interface</h4>
+            <p>Clean and intuitive task management</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="screenshot-features">
+        <div class="feature-highlight">
+          <div class="feature-icon">📱</div>
+          <h4>Mobile-First Design</h4>
+          <p>Optimized for smartphones and tablets</p>
+        </div>
+        <div class="feature-highlight">
+          <div class="feature-icon">🎨</div>
+          <h4>Beautiful UI</h4>
+          <p>Modern design with smooth animations</p>
+        </div>
+        <div class="feature-highlight">
+          <div class="feature-icon">⚡</div>
+          <h4>Fast Performance</h4>
+          <p>Lightning-fast loading and interactions</p>
+        </div>
+            </div>
+        </div>
+    </section>
+
+  <section class="support scroll-animate" id="support">
+    <div class="container">
+      <h2>Support & Contact</h2>
+      <p class="support-intro">Get help, report issues, or support the development of Arch Todo App</p>
+      
+      <div class="support-grid">
+        <div class="support-card scroll-animate">
+          <div class="support-icon">📧</div>
+          <h3>Email Support</h3>
+          <p>Get in touch for technical support, bug reports, or feature requests</p>
+          <a href="mailto:rijuranjan087@gmail.com" class="support-link">
+            rijuranjan087@gmail.com
+          </a>
+        </div>
+        
+        <div class="support-card scroll-animate">
+          <div class="support-icon">🐙</div>
+          <h3>GitHub Repository</h3>
+          <p>View source code, report issues, or contribute to the project</p>
+          <a href="https://github.com/coder-1459/arch-todo-app" target="_blank" class="support-link">
+            github.com/coder-1459/arch-todo-app
+          </a>
+        </div>
+        
+        <div class="support-card scroll-animate">
+          <div class="support-icon">💳</div>
+          <h3>Support Development</h3>
+          <p>Support the development of Arch Todo App with a donation</p>
+          <div class="upi-section">
+            <div class="upi-info">
+              <span class="upi-label">UPI ID:</span>
+              <span class="upi-id">rijuranjan2006@sbi</span>
+            </div>
+            <button class="copy-upi-btn" onclick="copyUPI()">Copy UPI ID</button>
+          </div>
+        </div>
+        
+        <div class="support-card scroll-animate">
+          <div class="support-icon">📱</div>
+          <h3>App Support</h3>
+          <p>Need help with the app? Check our documentation or contact us</p>
+          <div class="support-actions">
+            <a href="#features" class="support-action-btn">View Features</a>
+            <a href="#screenshot" class="support-action-btn">App Screenshots</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="support-faq">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>How do I get started with Arch Todo App?</h4>
+            <p>Download the app, create an account, and start organizing your tasks with our intuitive interface.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Is the app free to use?</h4>
+            <p>Yes! Arch Todo App is completely free with all core features available without any restrictions.</p>
+          </div>
+          <div class="faq-item">
+            <h4>How do I sync my tasks across devices?</h4>
+            <p>Simply log in with the same account on different devices, and your tasks will automatically sync.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Can I use the app offline?</h4>
+            <p>Yes! Arch Todo App works offline and syncs your data when you're back online.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Download Section -->
+      <div class="app-download-section" id="download">
+        <div class="download-container">
+          <div class="download-content">
+            <div class="download-text">
+              <h3>Ready to Get Started?</h3>
+              <p>Download Arch Todo App now and transform your productivity with our beautiful, feature-rich todo application.</p>
+              <div class="download-features">
+                <div class="download-feature">
+                  <span class="feature-icon">🚀</span>
+                  <span>Free Download</span>
+                </div>
+                <div class="download-feature">
+                  <span class="feature-icon">📱</span>
+                  <span>Android APK</span>
+                </div>
+                <div class="download-feature">
+                  <span class="feature-icon">🔒</span>
+                  <span>Safe & Secure</span>
+                </div>
+                <div class="download-feature">
+                  <span class="feature-icon">⚡</span>
+                  <span>Latest Version</span>
+                </div>
+              </div>
+            </div>
+            <div class="download-action">
+              <div class="app-info-card">
+                <div class="app-icon-large">
+                  <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <div class="app-details-large">
+                  <h4>Arch Todo App</h4>
+                  <p class="version-info">Version <span id="downloadVersion">1.0.0</span></p>
+                  <p class="size-info">Size: <span id="downloadSize">15.2 MB</span></p>
+                  <p class="update-info">Updated: <span id="downloadUpdated">January 15, 2025</span></p>
+                </div>
+              </div>
+              <button class="download-cta-btn" onclick="showDownloadModal()">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+                Download APK
+              </button>
+              <p class="download-note">Direct download from Google Drive • No registration required</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+  </section>
+
+
+
+  <!-- Footer Wave SVG -->
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,80 C360,160 1080,0 1440,80 L1440,120 L0,120 Z" fill="url(#footer-gradient)"/>
+      <defs>
+        <linearGradient id="footer-gradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#667eea"/>
+          <stop offset="1" stop-color="#764ba2"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <footer class="footer scroll-animate">
+    <div class="footer-glass">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <span class="footer-logo-text">Arch</span>
+              <p class="footer-tagline">Productivity Redefined</p>
+            </div>
+            <p class="footer-description">
+              Transform your productivity with our beautiful, feature-rich todo app.<br>
+              Stay organized, focused, and achieve more every day.
+            </p>
+            <div class="footer-social">
+              <a href="mailto:rijuranjan087@gmail.com" class="social-link" title="Email" aria-label="Email">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="4"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com/coder-1459/arch-todo-app" target="_blank" class="social-link" title="GitHub" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+              </a>
+              <a href="#" onclick="showDownloadModal()" class="social-link" title="Download APK" aria-label="Download APK">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-heading">Quick Links</h4>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+              <a href="#screenshot">Screenshots</a>
+              <a href="#review">Reviews</a>
+        <a href="#support">Support</a>
+            </div>
+        </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-heading">Features</h4>
+            <div class="footer-links">
+              <a href="#features">Anime Avatars</a>
+              <a href="#features">Pomodoro Timer</a>
+              <a href="#features">Task Analytics</a>
+              <a href="#features">Cross-Device Sync</a>
+              <a href="#features">Offline Mode</a>
+              <a href="#features">Calendar View</a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-heading">Support</h4>
+            <div class="footer-links">
+              <a href="mailto:rijuranjan087@gmail.com">Email Support</a>
+              <a href="https://github.com/coder-1459/arch-todo-app" target="_blank">GitHub</a>
+              <a href="#support">FAQ</a>
+              <a href="#support">UPI: rijuranjan2006@sbi</a>
+              <a href="#about">Developer</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Animated Gradient Divider -->
+        <div class="footer-divider-animated"></div>
+        
+        <div class="footer-bottom-content">
+          <div class="footer-copyright">
+            <p>&copy; 2025 Arch Todo App. All rights reserved.</p>
+            <p>Made with ❤️ by Riju Ranjan Singh</p>
+          </div>
+          <div class="footer-legal">
+            <a href="#privacy" onclick="showPrivacyPolicy()">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms" onclick="showTermsOfService()">Terms of Service</a>
+            <span class="separator">•</span>
+            <a href="#copyright" onclick="showCopyright()">Copyright</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sparkles Container -->
+      <div class="footer-sparkles"></div>
+    </div>
+  </footer>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacyModal" class="legal-modal">
+    <div class="legal-modal-content">
+      <div class="legal-modal-header">
+        <h2>Privacy Policy</h2>
+        <button class="legal-modal-close" onclick="closeLegalModal()">&times;</button>
+      </div>
+      <div class="legal-modal-body">
+        <div class="legal-section">
+          <h3>1. Introduction</h3>
+          <p><strong>Last updated:</strong> December 2024</p>
+          <p>This Privacy Policy describes how Arch Todo App ("we," "our," or "us") collects, uses, and protects your information when you use our website and mobile application.</p>
+          <p><strong>Contact Information:</strong></p>
+          <ul>
+            <li>Email: rijuranjan087@gmail.com</li>
+            <li>GitHub: <a href="https://github.com/coder-1459/arch-todo-app" target="_blank">https://github.com/coder-1459/arch-todo-app</a></li>
+            <li>Developer: Riju Ranjan Singh</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>2. Information We Collect</h3>
+          <h4>A. Information You Provide:</h4>
+          <ul>
+            <li>Email address (for support inquiries)</li>
+            <li>Feedback and reviews</li>
+            <li>Support requests</li>
+            <li>Donation information (UPI transactions)</li>
+          </ul>
+          
+          <h4>B. Automatically Collected Information:</h4>
+          <ul>
+            <li><strong>Analytics Data:</strong>
+              <ul>
+                <li>Page views and visit duration</li>
+                <li>User interactions (clicks, scroll depth)</li>
+                <li>Device information (browser, OS, screen size)</li>
+                <li>Geographic location (country/region level)</li>
+                <li>Referral sources</li>
+              </ul>
+            </li>
+            <li><strong>Local Storage:</strong>
+              <ul>
+                <li>User preferences</li>
+                <li>Analytics data (stored locally)</li>
+                <li>App settings and configurations</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>3. How We Use Your Information</h3>
+          <h4>A. Primary Uses:</h4>
+          <ul>
+            <li>Provide and improve the Arch Todo App</li>
+            <li>Respond to support requests</li>
+            <li>Analyze website performance and user behavior</li>
+            <li>Send important updates about the app</li>
+            <li>Process donations and support payments</li>
+          </ul>
+          
+          <h4>B. Analytics Purposes:</h4>
+          <ul>
+            <li>Understand user engagement patterns</li>
+            <li>Improve website design and functionality</li>
+            <li>Optimize user experience</li>
+            <li>Track feature popularity</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>4. Information Sharing & Disclosure</h3>
+          <h4>We DO NOT:</h4>
+          <ul>
+            <li>Sell your personal information</li>
+            <li>Share data with third-party advertisers</li>
+            <li>Use data for marketing purposes without consent</li>
+            <li>Share personal information with unauthorized parties</li>
+          </ul>
+          
+          <h4>We MAY share:</h4>
+          <ul>
+            <li>Aggregated, anonymized analytics data</li>
+            <li>Information required by law enforcement</li>
+            <li>Data with service providers (hosting, analytics)</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>5. Data Security</h3>
+          <h4>Security Measures:</h4>
+          <ul>
+            <li>HTTPS encryption for all data transmission</li>
+            <li>Local storage encryption where applicable</li>
+            <li>Regular security updates</li>
+            <li>Secure hosting infrastructure</li>
+            <li>Access controls and authentication</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>6. Data Retention</h3>
+          <h4>Retention Periods:</h4>
+          <ul>
+            <li><strong>Analytics Data:</strong> 2 years (anonymized)</li>
+            <li><strong>Support Emails:</strong> 3 years</li>
+            <li><strong>User Feedback:</strong> Indefinitely (for app improvement)</li>
+            <li><strong>Local Storage:</strong> Until user clears browser data</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>7. Your Rights & Choices</h3>
+          <h4>You Have the Right To:</h4>
+          <ul>
+            <li>Access your personal data</li>
+            <li>Request data correction or deletion</li>
+            <li>Opt-out of analytics tracking</li>
+            <li>Clear local storage data</li>
+            <li>Contact us with privacy concerns</li>
+          </ul>
+          
+          <h4>How to Exercise Rights:</h4>
+          <ul>
+            <li>Email: rijuranjan087@gmail.com</li>
+            <li>Clear browser data to remove local storage</li>
+            <li>Use browser privacy settings to limit tracking</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>8. Third-Party Services</h3>
+          <h4>Services We Use:</h4>
+          <ul>
+            <li><strong>Google Analytics 4:</strong> Website analytics</li>
+            <li><strong>GitHub:</strong> Code hosting and issue tracking</li>
+            <li><strong>Email Services:</strong> Support communication</li>
+            <li><strong>Payment Processors:</strong> UPI transactions</li>
+          </ul>
+          
+          <h4>Third-Party Privacy Policies:</h4>
+          <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Analytics Privacy Policy</a></li>
+            <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>9. Cookies & Tracking Technologies</h3>
+          <h4>Types of Cookies:</h4>
+          <ul>
+            <li><strong>Analytics Cookies:</strong> Track website usage</li>
+            <li><strong>Functional Cookies:</strong> Remember user preferences</li>
+            <li><strong>Local Storage:</strong> Store app settings and data</li>
+          </ul>
+          
+          <h4>Cookie Management:</h4>
+          <ul>
+            <li>Browser settings to control cookies</li>
+            <li>Analytics opt-out options</li>
+            <li>Local storage clearing instructions</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>10. Children's Privacy</h3>
+          <h4>Age Restrictions:</h4>
+          <ul>
+            <li>Arch Todo App is not intended for children under 13</li>
+            <li>We do not knowingly collect data from children under 13</li>
+            <li>Parents should contact us if they believe we have collected child data</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>11. International Data Transfers</h3>
+          <h4>Data Location:</h4>
+          <ul>
+            <li>Data may be processed in different countries</li>
+            <li>We ensure adequate data protection measures</li>
+            <li>Compliance with applicable privacy laws</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>12. Changes to Privacy Policy</h3>
+          <h4>Policy Updates:</h4>
+          <ul>
+            <li>We may update this policy periodically</li>
+            <li>Users will be notified of significant changes</li>
+            <li>Continued use constitutes acceptance of changes</li>
+            <li>Last updated date will be clearly displayed</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>13. Contact Information</h3>
+          <h4>Privacy Inquiries:</h4>
+          <ul>
+            <li><strong>Email:</strong> rijuranjan087@gmail.com</li>
+            <li><strong>GitHub Issues:</strong> <a href="https://github.com/coder-1459/arch-todo-app/issues" target="_blank">https://github.com/coder-1459/arch-todo-app/issues</a></li>
+            <li><strong>Response Time:</strong> Within 48 hours</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>14. Legal Basis & Compliance</h3>
+          <h4>Legal Framework:</h4>
+          <ul>
+            <li>GDPR compliance (for EU users)</li>
+            <li>CCPA compliance (for California users)</li>
+            <li>Local privacy law compliance</li>
+            <li>Industry best practices</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>15. Data Breach Procedures</h3>
+          <h4>In Case of Breach:</h4>
+          <ul>
+            <li>Immediate investigation and containment</li>
+            <li>Notification to affected users within 72 hours</li>
+            <li>Cooperation with authorities</li>
+            <li>Implementation of security improvements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms of Service Modal -->
+  <div id="termsModal" class="legal-modal">
+    <div class="legal-modal-content">
+      <div class="legal-modal-header">
+        <h2>Terms of Service</h2>
+        <button class="legal-modal-close" onclick="closeLegalModal()">&times;</button>
+      </div>
+      <div class="legal-modal-body">
+        <div class="legal-section">
+          <h3>1. Acceptance of Terms</h3>
+          <p>By accessing and using Arch Todo App, you accept and agree to be bound by the terms and provision of this agreement.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>2. Use License</h3>
+          <p>Permission is granted to temporarily download one copy of Arch Todo App for personal, non-commercial transitory viewing only.</p>
+          <p>This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+          <ul>
+            <li>Modify or copy the materials</li>
+            <li>Use the materials for any commercial purpose</li>
+            <li>Attempt to reverse engineer any software contained in Arch Todo App</li>
+            <li>Remove any copyright or other proprietary notations</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>3. Disclaimer</h3>
+          <p>The materials within Arch Todo App are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>4. Limitations</h3>
+          <p>In no event shall Arch Todo App or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Arch Todo App, even if we or an authorized representative has been notified orally or in writing of the possibility of such damage.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>5. Accuracy of Materials</h3>
+          <p>The materials appearing in Arch Todo App could include technical, typographical, or photographic errors. We do not warrant that any of the materials on Arch Todo App are accurate, complete or current. We may make changes to the materials contained on Arch Todo App at any time without notice.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>6. Links</h3>
+          <p>Arch Todo App has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Arch Todo App of the site.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>7. Modifications</h3>
+          <p>We may revise these terms of service for Arch Todo App at any time without notice. By using this website you are agreeing to be bound by the then current version of these Terms of Service.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>8. Governing Law</h3>
+          <p>These terms and conditions are governed by and construed in accordance with the laws and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>9. Contact Information</h3>
+          <p>If you have any questions about these Terms of Service, please contact us at:</p>
+          <ul>
+            <li>Email: rijuranjan087@gmail.com</li>
+            <li>GitHub: <a href="https://github.com/coder-1459/arch-todo-app" target="_blank">https://github.com/coder-1459/arch-todo-app</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright Modal -->
+  <div id="copyrightModal" class="legal-modal">
+    <div class="legal-modal-content">
+      <div class="legal-modal-header">
+        <h2>Copyright Notice</h2>
+        <button class="legal-modal-close" onclick="closeLegalModal()">&times;</button>
+      </div>
+      <div class="legal-modal-body">
+        <div class="legal-section">
+          <h3>Copyright © 2025 Arch Todo App</h3>
+          <p><strong>All Rights Reserved</strong></p>
+          <p>This copyright notice applies to all content, materials, and intellectual property associated with Arch Todo App, including but not limited to the website, mobile application, source code, design elements, and documentation.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>1. Copyright Ownership</h3>
+          <p>All content, materials, and intellectual property on this website and in the Arch Todo App are owned by <strong>Riju Ranjan Singh</strong> and are protected by copyright laws and international treaties.</p>
+          <p><strong>Copyright Holder:</strong> Riju Ranjan Singh</p>
+          <p><strong>Year of Creation:</strong> 2025</p>
+          <p><strong>Country of Origin:</strong> India</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>2. Protected Materials</h3>
+          <h4>The following materials are protected by copyright:</h4>
+          <ul>
+            <li><strong>Source Code:</strong> All programming code, scripts, and software architecture</li>
+            <li><strong>Design Elements:</strong> User interface designs, graphics, icons, and visual assets</li>
+            <li><strong>Content:</strong> Text, descriptions, features, and documentation</li>
+            <li><strong>Branding:</strong> Logos, trademarks, and brand identity elements</li>
+            <li><strong>Media:</strong> Screenshots, images, and multimedia content</li>
+            <li><strong>Documentation:</strong> User guides, technical documentation, and specifications</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>3. Permitted Uses</h3>
+          <h4>You may:</h4>
+          <ul>
+            <li>Use the Arch Todo App for personal productivity and task management</li>
+            <li>View and interact with the website content for informational purposes</li>
+            <li>Share links to the website on social media platforms</li>
+            <li>Provide feedback and suggestions for improvement</li>
+            <li>Report bugs or issues through official channels</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>4. Prohibited Uses</h3>
+          <h4>You may NOT:</h4>
+          <ul>
+            <li>Copy, reproduce, or distribute any copyrighted materials without permission</li>
+            <li>Modify, adapt, or create derivative works from the source code</li>
+            <li>Reverse engineer, decompile, or disassemble the software</li>
+            <li>Remove or alter copyright notices, trademarks, or proprietary markings</li>
+            <li>Use the materials for commercial purposes without authorization</li>
+            <li>Distribute the application or website content through unauthorized channels</li>
+            <li>Claim ownership or authorship of any copyrighted materials</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>5. Open Source Components</h3>
+          <p>Arch Todo App may incorporate open-source software components. These components are used in accordance with their respective licenses, which are typically more permissive than this copyright notice.</p>
+          <h4>Open Source Licenses:</h4>
+          <ul>
+            <li>Third-party libraries and frameworks used in development</li>
+            <li>Icons and design resources from open-source projects</li>
+            <li>Development tools and utilities</li>
+          </ul>
+          <p>For specific open-source license information, please refer to the project's source code repository.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>6. Fair Use</h3>
+          <p>Limited use of copyrighted materials may be permitted under fair use provisions for:</p>
+          <ul>
+            <li>Educational purposes and research</li>
+            <li>News reporting and commentary</li>
+            <li>Criticism and review</li>
+            <li>Parody and satire</li>
+          </ul>
+          <p>Fair use determinations are made on a case-by-case basis and should be evaluated carefully.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>7. Licensing and Permissions</h3>
+          <p>If you wish to use any copyrighted materials from Arch Todo App for purposes beyond those permitted above, you must obtain written permission from the copyright holder.</p>
+          <h4>Permission Requests:</h4>
+          <ul>
+            <li>Send detailed requests to: rijuranjan087@gmail.com</li>
+            <li>Include specific materials and intended use</li>
+            <li>Allow reasonable time for review and response</li>
+            <li>Permission may be granted with conditions or restrictions</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>8. Copyright Infringement</h3>
+          <p>If you believe that your copyrighted work has been used in a way that constitutes copyright infringement, please contact us immediately.</p>
+          <h4>Infringement Reports Should Include:</h4>
+          <ul>
+            <li>Description of the copyrighted work</li>
+            <li>Location of the infringing material</li>
+            <li>Your contact information</li>
+            <li>Statement of good faith belief</li>
+            <li>Statement of accuracy under penalty of perjury</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>9. Updates and Modifications</h3>
+          <p>This copyright notice may be updated periodically to reflect changes in the application, legal requirements, or copyright ownership.</p>
+          <ul>
+            <li>Updates will be posted on this website</li>
+            <li>Continued use constitutes acceptance of updated terms</li>
+            <li>Major changes will be communicated through official channels</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>10. International Copyright</h3>
+          <p>Arch Todo App is protected by copyright laws in India and internationally through various treaties and agreements, including:</p>
+          <ul>
+            <li>Berne Convention for the Protection of Literary and Artistic Works</li>
+            <li>Universal Copyright Convention</li>
+            <li>WIPO Copyright Treaty</li>
+            <li>National copyright laws in various jurisdictions</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>11. Contact Information</h3>
+          <p>For copyright-related inquiries, permissions, or infringement reports:</p>
+          <ul>
+            <li><strong>Email:</strong> rijuranjan087@gmail.com</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/coder-1459/arch-todo-app" target="_blank">https://github.com/coder-1459/arch-todo-app</a></li>
+            <li><strong>Developer:</strong> Riju Ranjan Singh</li>
+            <li><strong>Response Time:</strong> Within 48 hours for urgent matters</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>12. Legal Disclaimer</h3>
+          <p>This copyright notice is provided for informational purposes and does not constitute legal advice. For specific legal questions regarding copyright law, please consult with a qualified attorney.</p>
+          <p>The copyright holder reserves all rights not expressly granted in this notice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download Modal -->
+  <div id="downloadModal" class="legal-modal">
+    <div class="legal-modal-content">
+      <div class="legal-modal-header">
+        <h2>Download Arch Todo App</h2>
+        <button class="legal-modal-close" onclick="closeDownloadModal()">&times;</button>
+      </div>
+      <div class="legal-modal-body">
+        <div class="download-section">
+          <div class="app-info">
+            <div class="app-icon">
+              <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <div class="app-details">
+              <h3>Arch Todo App</h3>
+              <p class="app-version">Version <span id="appVersion">1.0.0</span></p>
+              <p class="app-size">Size: <span id="appSize">15.2 MB</span></p>
+              <p class="app-updated">Updated: <span id="appUpdated">January 15, 2025</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-section">
+          <h3>Download Options</h3>
+          <div class="download-options">
+            <div class="download-option">
+              <h4>Google Drive (Recommended)</h4>
+              <p>Download directly from Google Drive</p>
+              <a href="#" id="directDownloadLink" class="download-btn primary" onclick="downloadAPK('direct')">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+                Download APK
+              </a>
+            </div>
+            
+
+
+            <div class="download-option">
+              <h4>Alternative Download</h4>
+              <p>Download from Dropbox (backup option)</p>
+              <a href="#" id="dropboxLink" class="download-btn secondary" onclick="downloadAPK('dropbox')" target="_blank">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Download from Dropbox
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-section">
+          <h3>Installation Instructions</h3>
+          <div class="installation-steps">
+            <div class="step">
+              <span class="step-number">1</span>
+              <div class="step-content">
+                <h4>Enable Unknown Sources</h4>
+                <p>Go to Settings → Security → Unknown Sources and enable it</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <div class="step-content">
+                <h4>Download APK</h4>
+                <p>Click the download button above to get the APK file</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <div class="step-content">
+                <h4>Install App</h4>
+                <p>Open the downloaded APK file and follow the installation prompts</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-number">4</span>
+              <div class="step-content">
+                <h4>Enjoy!</h4>
+                <p>Open Arch Todo App and start organizing your tasks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-section">
+          <h3>System Requirements</h3>
+          <div class="requirements">
+            <div class="requirement">
+              <strong>Android Version:</strong> Android 6.0 (API 23) or higher
+            </div>
+            <div class="requirement">
+              <strong>Storage:</strong> Minimum 50 MB free space
+            </div>
+            <div class="requirement">
+              <strong>RAM:</strong> 2 GB or more recommended
+            </div>
+            <div class="requirement">
+              <strong>Permissions:</strong> Storage, Internet (for sync)
+            </div>
+          </div>
+        </div>
+
+        <div class="download-section">
+          <h3>What's New in This Version</h3>
+          <div class="changelog">
+            <div class="changelog-item">
+              <span class="version-tag">v1.0.0</span>
+              <div class="changelog-content">
+                <h4>Initial Release</h4>
+                <ul>
+                  <li>Beautiful anime avatar system</li>
+                  <li>Pomodoro timer integration</li>
+                  <li>Task analytics and insights</li>
+                  <li>Cross-device synchronization</li>
+                  <li>Offline mode support</li>
+                  <li>Calendar view and scheduling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-section">
+          <h3>Support & Feedback</h3>
+          <p>If you encounter any issues during download or installation, please contact us:</p>
+          <div class="support-links">
+            <a href="mailto:rijuranjan087@gmail.com" class="support-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="4"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Email Support
+            </a>
+            <a href="https://github.com/coder-1459/arch-todo-app/issues" target="_blank" class="support-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+              </svg>
+              Report Issue
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Guide Modal -->
+  <div id="userGuideModal" class="legal-modal">
+    <div class="legal-modal-content user-guide-content">
+      <div class="legal-modal-header">
+        <h2>📖 Arch - Todo Schedule Planner</h2>
+        <button class="legal-modal-close" onclick="closeUserGuide()">&times;</button>
+      </div>
+      <div class="legal-modal-body">
+        <div class="user-guide-section">
+          <h3>Complete User Guide</h3>
+          <p>Welcome to <strong>Arch</strong>, your comprehensive productivity companion! This guide will help you master all the features of this beautiful and powerful todo app.</p>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>📱 Getting Started</h3>
+          <h4>First Launch</h4>
+          <ol>
+            <li><strong>Splash Screen</strong>: The app starts with a beautiful animated splash screen featuring the Arch logo</li>
+            <li><strong>Authentication</strong>: You'll need to create an account or sign in to use the app</li>
+            <li><strong>Welcome</strong>: After login, you'll receive a welcome notification</li>
+          </ol>
+          
+          <h4>Authentication Options</h4>
+          <ul>
+            <li><strong>Email/Password</strong>: Create a new account or sign in with existing credentials</li>
+            <li><strong>Google Sign-In</strong>: Quick and secure login with your Google account</li>
+            <li><strong>Registration</strong>: New users can create an account with email and password</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>🏠 Main Interface</h3>
+          <h4>Navigation Bar</h4>
+          <p>The app features a modern bottom navigation with four main sections:</p>
+          <ol>
+            <li><strong>📋 Tasks</strong> - Your main task management hub</li>
+            <li><strong>📅 Calendar</strong> - View tasks by date</li>
+            <li><strong>📊 Stats</strong> - Productivity analytics</li>
+            <li><strong>⏰ Timer</strong> - Pomodoro and custom timers</li>
+          </ol>
+          
+          <h4>App Bar Toggle</h4>
+          <ul>
+            <li><strong>Tap the small notch</strong> at the top center to expand/collapse the app bar</li>
+            <li>The app bar shows your profile, greeting message, and quick access buttons</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>📋 Task Management</h3>
+          <h4>Creating Tasks</h4>
+          <ol>
+            <li><strong>Tap the + button</strong> in the Tasks tab</li>
+            <li><strong>Fill in task details</strong>:
+              <ul>
+                <li><strong>Title</strong> (required): Enter your task name</li>
+                <li><strong>Description</strong> (optional): Add detailed notes</li>
+                <li><strong>Due Date</strong>: Select when the task is due</li>
+                <li><strong>Important</strong>: Toggle to mark as priority task</li>
+              </ul>
+            </li>
+            <li><strong>Tap "Add Task"</strong> to save</li>
+          </ol>
+          
+          <h4>Task Features</h4>
+          <ul>
+            <li><strong>Priority Marking</strong>: Important tasks show a red priority icon</li>
+            <li><strong>Categories</strong>: Tasks can be organized by categories (color-coded)</li>
+            <li><strong>Due Dates</strong>: Each task has a specific due date</li>
+            <li><strong>Completion Tracking</strong>: Check off completed tasks</li>
+          </ul>
+          
+          <h4>Managing Tasks</h4>
+          <ul>
+            <li><strong>Complete</strong>: Tap the checkbox to mark as done</li>
+            <li><strong>Edit</strong>: Long press any task to edit details</li>
+            <li><strong>Delete</strong>: Swipe left on a task and tap the delete button</li>
+            <li><strong>View Details</strong>: Tap on a task to see full information</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>📅 Calendar View</h3>
+          <h4>Calendar Features</h4>
+          <ul>
+            <li><strong>Monthly View</strong>: See all your tasks on a calendar</li>
+            <li><strong>Daily Overview</strong>: Tap any date to see tasks for that day</li>
+            <li><strong>Task Markers</strong>: Days with tasks show colored dots</li>
+            <li><strong>Format Options</strong>: Switch between month, 2-week, and week views</li>
+          </ul>
+          
+          <h4>Using the Calendar</h4>
+          <ol>
+            <li><strong>Navigate</strong>: Swipe or use arrows to change months</li>
+            <li><strong>Select Date</strong>: Tap any date to view its tasks</li>
+            <li><strong>View Tasks</strong>: See all tasks scheduled for the selected date</li>
+            <li><strong>Quick Actions</strong>: Mark tasks complete directly from calendar view</li>
+          </ol>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>📊 Statistics & Analytics</h3>
+          <h4>Productivity Overview</h4>
+          <ul>
+            <li><strong>Total Tasks</strong>: Count of all created tasks</li>
+            <li><strong>Completed Tasks</strong>: Number of finished tasks</li>
+            <li><strong>Pending Tasks</strong>: Remaining incomplete tasks</li>
+            <li><strong>Productivity Percentage</strong>: Overall completion rate</li>
+          </ul>
+          
+          <h4>Performance Record</h4>
+          <ul>
+            <li><strong>Best Streak</strong>: Longest consecutive days with 100% completion</li>
+            <li><strong>Weekly Rate</strong>: Current week's completion percentage</li>
+            <li><strong>Daily Progress</strong>: Visual chart of last 7 days' performance</li>
+            <li><strong>Color Coding</strong>: Green (100%), Orange (50%+), Red (<50%)</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>⏰ Timer Features</h3>
+          <h4>Pomodoro Timer</h4>
+          <ul>
+            <li><strong>Focus Sessions</strong>: 25-minute work periods</li>
+            <li><strong>Break Sessions</strong>: 5-minute rest periods</li>
+            <li><strong>Automatic Switching</strong>: Seamlessly alternate between work and break</li>
+          </ul>
+          
+          <h4>Using Pomodoro Timer</h4>
+          <ol>
+            <li><strong>Start Focus</strong>: Tap play to begin a 25-minute work session</li>
+            <li><strong>Take Breaks</strong>: Timer automatically switches to 5-minute breaks</li>
+            <li><strong>Manual Control</strong>: Use buttons to switch between work/break modes</li>
+            <li><strong>Reset</strong>: Tap refresh to reset the timer</li>
+          </ol>
+          
+          <h4>Custom Timer</h4>
+          <ul>
+            <li><strong>Flexible Duration</strong>: Set any time from 1 minute to 2 hours</li>
+            <li><strong>Simple Controls</strong>: Use +/- buttons or type directly</li>
+            <li><strong>Personalized Sessions</strong>: Perfect for custom work intervals</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>👤 Profile & Settings</h3>
+          <h4>Profile Management</h4>
+          <ul>
+            <li><strong>Edit Name</strong>: Tap the edit icon next to your name</li>
+            <li><strong>Change Avatar</strong>: Choose from anime avatars or upload from gallery</li>
+            <li><strong>View Email</strong>: Your registered email address</li>
+            <li><strong>Logout</strong>: Secure sign-out option</li>
+          </ul>
+          
+          <h4>Avatar Options</h4>
+          <ul>
+            <li><strong>Anime Avatars</strong>: 7 pre-designed anime-style avatars</li>
+            <li><strong>Gallery Upload</strong>: Use your own photos</li>
+            <li><strong>Quick Selection</strong>: Easy avatar switching</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>🎨 Theme & Customization</h3>
+          <h4>Light Mode</h4>
+          <ul>
+            <li><strong>Clean Interface</strong>: Bright, modern design</li>
+            <li><strong>Animated Backgrounds</strong>: Beautiful gradient transitions</li>
+            <li><strong>Glassmorphism Effects</strong>: Translucent UI elements</li>
+            <li><strong>High Contrast</strong>: Easy readability</li>
+          </ul>
+          
+          <h4>Dark Mode</h4>
+          <ul>
+            <li><strong>Eye-Friendly</strong>: Reduced eye strain in low light</li>
+            <li><strong>Battery Efficient</strong>: Saves battery on OLED screens</li>
+            <li><strong>Modern Aesthetic</strong>: Sleek dark interface</li>
+            <li><strong>Consistent Design</strong>: Same features, different appearance</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>🚀 Tips & Best Practices</h3>
+          <h4>Productivity Tips</h4>
+          <ol>
+            <li><strong>Use Categories</strong>: Organize tasks by project or type</li>
+            <li><strong>Set Realistic Due Dates</strong>: Don't overload single days</li>
+            <li><strong>Mark Important Tasks</strong>: Prioritize what matters most</li>
+            <li><strong>Use the Timer</strong>: Focus on one task at a time</li>
+            <li><strong>Check Statistics</strong>: Monitor your progress regularly</li>
+          </ol>
+          
+          <h4>App Usage Tips</h4>
+          <ol>
+            <li><strong>Long Press</strong>: Use long press for editing tasks</li>
+            <li><strong>Swipe Gestures</strong>: Swipe left to delete tasks</li>
+            <li><strong>Calendar Navigation</strong>: Use calendar for date-based planning</li>
+            <li><strong>Theme Switching</strong>: Choose the theme that works best for you</li>
+            <li><strong>Regular Backups</strong>: Your data syncs automatically</li>
+          </ol>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>🆘 Troubleshooting</h3>
+          <h4>Common Issues</h4>
+          <p><strong>Notifications Not Working</strong></p>
+          <ul>
+            <li>Check app permissions in device settings</li>
+            <li>For MIUI devices, follow the special instructions</li>
+            <li>Ensure app is not battery optimized</li>
+          </ul>
+          
+          <p><strong>Timer Not Playing Sound</strong></p>
+          <ul>
+            <li>Check device volume settings</li>
+            <li>Verify app has audio permissions</li>
+            <li>Restart the app if needed</li>
+          </ul>
+          
+          <h4>Getting Help</h4>
+          <ul>
+            <li><strong>Email Support</strong>: rijuranjan087@gmail.com</li>
+            <li><strong>Bug Reports</strong>: Use the in-app reporting feature</li>
+            <li><strong>Developer Contact</strong>: Available in settings menu</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>📞 Support & Feedback</h3>
+          <h4>Contact Information</h4>
+          <ul>
+            <li><strong>Developer</strong>: Riju Ranjan Singh</li>
+            <li><strong>Email</strong>: rijuranjan087@gmail.com</li>
+            <li><strong>GitHub</strong>: <a href="https://github.com/coder-1459" target="_blank">coder-1459</a></li>
+            <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/riju-ranjan-singh-612a36365/" target="_blank">Riju Ranjan Singh</a></li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>📄 Version Information</h3>
+          <ul>
+            <li><strong>Current Version</strong>: 1.0.0</li>
+            <li><strong>Last Updated</strong>: 2024</li>
+            <li><strong>Developer</strong>: Riju Ranjan Singh</li>
+            <li><strong>Framework</strong>: Flutter & Dart</li>
+          </ul>
+        </div>
+
+        <div class="user-guide-section">
+          <h3>Thank you for choosing Arch!</h3>
+          <p>This comprehensive todo app is designed to help you stay organized, focused, and productive. With its beautiful interface, powerful features, and intuitive design, Arch is your perfect productivity companion.</p>
+          <p><em>Made with ❤️ using Flutter</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Simple scroll animation using Intersection Observer
+    document.addEventListener('DOMContentLoaded', function() {
+      // Ensure page starts at top on refresh
+      if (window.location.hash === '') {
+        window.scrollTo(0, 0);
+      }
+      
+      const observer = new window.IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.scroll-animate').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Initialize download section with app config
+      initializeDownloadSection();
+
+      // Track page views and user interactions
+      trackPageView();
+      trackUserInteractions();
+      
+      // Enhanced navigation functionality
+      setupNavigation();
+    });
+
+    // Handle page refresh and navigation
+    window.addEventListener('beforeunload', function() {
+      // Clear any hash fragments when leaving the page
+      if (window.location.hash && window.location.hash !== '#home') {
+        window.location.hash = '';
+      }
+    });
+
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', function() {
+      if (window.location.hash === '') {
+        // If no hash, scroll to top
+        window.scrollTo(0, 0);
+      }
+    });
+
+    // Legal Modal Functions
+    function showPrivacyPolicy() {
+      document.getElementById('privacyModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function showTermsOfService() {
+      document.getElementById('termsModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Initialize download section with app configuration
+    function initializeDownloadSection() {
+      // Update download section with current app config
+      const downloadVersion = document.getElementById('downloadVersion');
+      const downloadSize = document.getElementById('downloadSize');
+      const downloadUpdated = document.getElementById('downloadUpdated');
+      
+      if (downloadVersion) downloadVersion.textContent = appConfig.version;
+      if (downloadSize) downloadSize.textContent = appConfig.size;
+      if (downloadUpdated) downloadUpdated.textContent = appConfig.updated;
+    }
+
+    // App Configuration - Easy to update for new versions
+    const appConfig = {
+      version: "1.0.0",
+      size: "15.2 MB",
+      updated: "January 15, 2025",
+      
+      // Google Drive Configuration
+      // File ID: 1tThypsmr23FDHPtrQ4iOWyKhA_dA_x23
+      directDownloadUrl: "https://drive.google.com/uc?export=download&id=1tThypsmr23FDHPtrQ4iOWyKhA_dA_x23",
+      googleDriveUrl: "https://drive.google.com/file/d/1tThypsmr23FDHPtrQ4iOWyKhA_dA_x23/view?usp=sharing",
+      
+      // Alternative download options (you can add more)
+      dropboxUrl: "https://dl.dropboxusercontent.com/s/YOUR_DROPBOX_ID/arch-todo-app-v1.0.0.apk",
+      
+      changelog: [
+        {
+          version: "1.0.0",
+          title: "Initial Release",
+          features: [
+            "Beautiful anime avatar system",
+            "Pomodoro timer integration", 
+            "Task analytics and insights",
+            "Cross-device synchronization",
+            "Offline mode support",
+            "Calendar view and scheduling"
+          ]
+        }
+      ]
+    };
+
+    function showCopyright() {
+      document.getElementById('copyrightModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function showUserGuide() {
+      document.getElementById('userGuideModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeUserGuide() {
+      document.getElementById('userGuideModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function showDownloadModal() {
+      // Update modal with current app config
+      document.getElementById('appVersion').textContent = appConfig.version;
+      document.getElementById('appSize').textContent = appConfig.size;
+      document.getElementById('appUpdated').textContent = appConfig.updated;
+      
+      // Update download section with current app config
+      document.getElementById('downloadVersion').textContent = appConfig.version;
+      document.getElementById('downloadSize').textContent = appConfig.size;
+      document.getElementById('downloadUpdated').textContent = appConfig.updated;
+      
+      // Update download links
+      document.getElementById('directDownloadLink').href = appConfig.directDownloadUrl;
+      document.getElementById('dropboxLink').href = appConfig.dropboxUrl;
+      
+      document.getElementById('downloadModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDownloadModal() {
+      document.getElementById('downloadModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function downloadAPK(type) {
+      if (type === 'direct') {
+        // Track Google Drive direct download
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'download', {
+            event_category: 'engagement',
+            event_label: 'APK Google Drive Direct v' + appConfig.version
+          });
+        }
+        
+        console.log('Downloading APK from Google Drive:', appConfig.version);
+        
+        // Trigger direct download
+        window.open(appConfig.directDownloadUrl, '_blank');
+        
+      } else if (type === 'dropbox') {
+        // Track Dropbox download
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'download', {
+            event_category: 'engagement',
+            event_label: 'APK Dropbox v' + appConfig.version
+          });
+        }
+        
+        console.log('Downloading APK from Dropbox:', appConfig.version);
+        window.open(appConfig.dropboxUrl, '_blank');
+      }
+    }
+
+    function showDownloadInstructions() {
+      // Show helpful instructions for Google Drive download
+      const instructions = `
+        📱 Google Drive Download Instructions:
+        
+        1. Click the download button
+        2. If you see a warning, click "Advanced" → "Go to [your site] (unsafe)"
+        3. Click "Download anyway"
+        4. The APK will start downloading
+        
+        💡 Tip: If download doesn't start, try the "Google Drive Preview" option instead.
+      `;
+      
+      console.log(instructions);
+      // You can also show this as a modal or notification
+    }
+
+    function closeLegalModal() {
+      document.getElementById('privacyModal').style.display = 'none';
+      document.getElementById('termsModal').style.display = 'none';
+      document.getElementById('copyrightModal').style.display = 'none';
+      document.getElementById('downloadModal').style.display = 'none';
+      document.getElementById('userGuideModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const privacyModal = document.getElementById('privacyModal');
+      const termsModal = document.getElementById('termsModal');
+      const copyrightModal = document.getElementById('copyrightModal');
+      const downloadModal = document.getElementById('downloadModal');
+      const userGuideModal = document.getElementById('userGuideModal');
+      
+      if (event.target === privacyModal) {
+        closeLegalModal();
+      }
+      if (event.target === termsModal) {
+        closeLegalModal();
+      }
+      if (event.target === copyrightModal) {
+        closeLegalModal();
+      }
+      if (event.target === downloadModal) {
+        closeDownloadModal();
+      }
+      if (event.target === userGuideModal) {
+        closeUserGuide();
+      }
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeLegalModal();
+      }
+    });
+
+    // Enhanced Navigation Setup
+    function setupNavigation() {
+      const header = document.querySelector('.header');
+      const navLinks = document.querySelectorAll('nav a');
+      
+      // Header scroll effect
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      
+      // Active navigation highlighting
+      const sections = document.querySelectorAll('section[id]');
+      
+      function updateActiveNav() {
+        const scrollPos = window.scrollY + 100;
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute('id');
+          
+          if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === '#' + sectionId) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }
+      
+      window.addEventListener('scroll', updateActiveNav);
+      
+      // Smooth scrolling for navigation links
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          if (targetSection) {
+            const offsetTop = targetSection.offsetTop - 80; // Account for fixed header
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    }
+
+    // Track page view
+    function trackPageView() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'page_view', {
+          page_title: document.title,
+          page_location: window.location.href
+        });
+      }
+      
+      // Store local analytics
+      const analytics = JSON.parse(localStorage.getItem('archAnalytics') || '{}');
+      const today = new Date().toDateString();
+      
+      if (!analytics.pageViews) analytics.pageViews = {};
+      if (!analytics.pageViews[today]) analytics.pageViews[today] = 0;
+      analytics.pageViews[today]++;
+      
+      localStorage.setItem('archAnalytics', JSON.stringify(analytics));
+    }
+
+    // Track user interactions
+    function trackUserInteractions() {
+      // Track button clicks
+      document.querySelectorAll('.btn, a[href^="#"]').forEach(btn => {
+        btn.addEventListener('click', function() {
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'click', {
+              event_category: 'engagement',
+              event_label: this.textContent.trim() || this.href
+            });
+          }
+          
+          // Track local analytics
+          const analytics = JSON.parse(localStorage.getItem('archAnalytics') || '{}');
+          if (!analytics.clicks) analytics.clicks = {};
+          const clickLabel = this.textContent.trim() || this.href;
+          if (!analytics.clicks[clickLabel]) analytics.clicks[clickLabel] = 0;
+          analytics.clicks[clickLabel]++;
+          localStorage.setItem('archAnalytics', JSON.stringify(analytics));
+        });
+      });
+
+      // Track scroll depth
+      let maxScroll = 0;
+      window.addEventListener('scroll', function() {
+        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (scrollPercent > maxScroll) {
+          maxScroll = scrollPercent;
+          if (maxScroll % 25 === 0) { // Track at 25%, 50%, 75%, 100%
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'scroll', {
+                event_category: 'engagement',
+                event_label: `${maxScroll}% scroll depth`
+              });
+            }
+          }
+        }
+      });
+
+      // Track time on page
+      let startTime = Date.now();
+      window.addEventListener('beforeunload', function() {
+        const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'timing_complete', {
+            name: 'page_view_time',
+            value: timeOnPage
+          });
+        }
+        
+        // Store local analytics
+        const analytics = JSON.parse(localStorage.getItem('archAnalytics') || '{}');
+        if (!analytics.timeOnPage) analytics.timeOnPage = [];
+        analytics.timeOnPage.push(timeOnPage);
+        if (analytics.timeOnPage.length > 100) analytics.timeOnPage.shift(); // Keep last 100 entries
+        localStorage.setItem('archAnalytics', JSON.stringify(analytics));
+      });
+    }
+
+      // Features tab logic
+      // The features section no longer uses tabs, so this script block is no longer needed.
+      // Keeping it for now as it might be re-introduced or removed later.
+      // const tabs = document.querySelectorAll('.feature-tab');
+      // const panels = document.querySelectorAll('.feature-tab-panel');
+      // tabs.forEach(tab => {
+      //   tab.addEventListener('click', () => {
+      //     tabs.forEach(t => t.classList.remove('active'));
+      //     panels.forEach(p => p.classList.remove('active'));
+      //     tab.classList.add('active');
+      //     const idx = tab.getAttribute('data-tab');
+      //     document.querySelector('.feature-tab-panel[data-tab="' + idx + '"]').classList.add('active');
+      //   });
+      // });
+
+    // Typewriter animation for Schedule Planner : To-Do App
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('typewriter-text');
+      var text = 'Made by Riju Ranjan Singh';
+      var i = 0;
+      function typeWriter() {
+        if (i < text.length) {
+          el.textContent += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 60);
+        } else {
+          el.classList.add('done');
+        }
+      }
+      if (el) typeWriter();
+    });
+
+    // Analytics Dashboard Functions
+    function showAnalytics() {
+      const analytics = JSON.parse(localStorage.getItem('archAnalytics') || '{}');
+      const dashboard = document.getElementById('analytics-dashboard');
+      
+      if (!dashboard) return;
+      
+      // Calculate total page views
+      const totalViews = Object.values(analytics.pageViews || {}).reduce((sum, views) => sum + views, 0);
+      
+      // Calculate average time on page
+      const avgTime = analytics.timeOnPage && analytics.timeOnPage.length > 0 
+        ? Math.round(analytics.timeOnPage.reduce((sum, time) => sum + time, 0) / analytics.timeOnPage.length)
+        : 0;
+      
+      // Get top clicked elements
+      const topClicks = Object.entries(analytics.clicks || {})
+        .sort(([,a], [,b]) => b - a)
+        .slice(0, 5);
+      
+      dashboard.innerHTML = `
+        <div class="analytics-card">
+          <h3>📊 Website Analytics</h3>
+          <div class="analytics-stats">
+            <div class="stat">
+              <span class="stat-number">${totalViews}</span>
+              <span class="stat-label">Total Page Views</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">${Object.keys(analytics.pageViews || {}).length}</span>
+              <span class="stat-label">Days Tracked</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">${avgTime}s</span>
+              <span class="stat-label">Avg. Time on Page</span>
+            </div>
+          </div>
+          ${topClicks.length > 0 ? `
+            <div class="top-clicks">
+              <h4>Top Clicked Elements:</h4>
+              <ul>
+                ${topClicks.map(([element, clicks]) => `<li>${element}: ${clicks} clicks</li>`).join('')}
+              </ul>
+            </div>
+          ` : ''}
+          <button onclick="clearAnalytics()" class="btn-clear">Clear Data</button>
+        </div>
+      `;
+    }
+
+    function clearAnalytics() {
+      if (confirm('Are you sure you want to clear all analytics data?')) {
+        localStorage.removeItem('archAnalytics');
+        showAnalytics();
+      }
+    }
+
+    // Show analytics when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(showAnalytics, 1000);
+    });
+
+    // Copy UPI ID function
+    function copyUPI() {
+      const upiId = 'rijuranjan2006@sbi';
+      navigator.clipboard.writeText(upiId).then(function() {
+        const btn = document.querySelector('.copy-upi-btn');
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.style.background = 'linear-gradient(45deg, #10b981, #059669)';
+        setTimeout(function() {
+          btn.textContent = originalText;
+          btn.style.background = 'linear-gradient(45deg, #8b5cf6, #ec4899)';
+        }, 2000);
+      }).catch(function(err) {
+        console.error('Could not copy text: ', err);
+        alert('UPI ID: ' + upiId);
+      });
+    }
+  </script>
+</body>
+</html> 
